@@ -1,0 +1,9 @@
+.react-player-container {
+  width: 600px;
+}
+
+@media screen and (max-width: 1500px) {
+  .react-player {
+    width: 400px;
+  }
+}

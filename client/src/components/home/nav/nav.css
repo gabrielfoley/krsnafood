@@ -1,0 +1,38 @@
+.nav {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .nav {
+    background: rgb(67, 2, 2);
+    width: max-content;
+    display: block;
+    padding: 0.5rem 12rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0rem;
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(15px);
+    /* opacity: 0.9; */
+  }
+
+  .nav a {
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .nav a.active {
+    background: rgb(231, 180, 52);
+    color: #000;
+  }
+}

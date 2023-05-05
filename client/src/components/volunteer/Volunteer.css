@@ -1,0 +1,119 @@
+.form {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  padding: 20px;
+}
+
+.formTitle {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+input,
+textarea {
+  width: 30%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgb(230, 227, 211);
+  border: 3px solid maroon;
+  resize: none;
+  color: #000;
+  caret-color: maroon;
+}
+
+.formBtn {
+  width: 10%;
+  height: 40px;
+  padding: 5px;
+  background: teal;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.formBtn:hover {
+  border: 2px solid maroon;
+  cursor: pointer;
+  background: rgb(230, 227, 211);
+  color: #000;
+}
+
+@media screen and (max-width: 1100px) {
+  .formTitle {
+    padding: 10px;
+    font-size: 18px;
+  }
+  input,
+  textarea {
+    width: 45%;
+    padding: 1rem;
+    border: 2px solid maroon;
+  }
+
+  .formBtn {
+    width: 15%;
+    height: 35px;
+    padding: 2px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  form {
+    gap: 1rem;
+    margin-bottom: 100px;
+  }
+
+  .formTitle {
+    font-size: 16px;
+  }
+  input,
+  textarea {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid maroon;
+  }
+
+  .formBtn {
+    width: 20%;
+    height: 30px;
+    font-size: 10px;
+  }
+  .formBtn:hover {
+    border: 1px solid maroon;
+  }
+}
+@media screen and (max-width: 500px) {
+  form {
+    gap: 0.5rem;
+  }
+
+  .formTitle {
+    font-size: 14px;
+  }
+  input,
+  textarea {
+    width: 80%;
+    padding: 0.3rem;
+    font-size: 10px;
+  }
+
+  .formBtn {
+    width: 20%;
+    height: 25px;
+    padding: 3px;
+    font-size: 7px;
+    border-radius: 20%;
+  }
+  .formBtn:hover {
+    border: 1px solid maroon;
+  }
+}

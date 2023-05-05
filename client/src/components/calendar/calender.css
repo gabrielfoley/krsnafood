@@ -1,0 +1,97 @@
+.calender {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.calenderContainer {
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+  text-align: center;
+}
+
+.calenderTitle {
+  font-size: 30px;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.calenderUl {
+  list-style: none;
+  background: rgb(217, 214, 214);
+  padding: 10px;
+  border-radius: 5px;
+}
+.calenderList {
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 500;
+}
+.calenderList .text {
+  font-weight: 900;
+}
+.calenderList > .a {
+  font-weight: 900;
+  color: maroon;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  .calenderTitle {
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  .calenderUl {
+    padding: 15px;
+  }
+  .calenderList {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .calenderTitle {
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  .calenderUl {
+    padding: 10px;
+  }
+  .calenderList {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .calenderTitle {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .calenderUl {
+    padding: 5px;
+  }
+  .calenderList {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  @media screen and (max-width: 600px) {
+    .calenderTitle {
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    .calenderUl {
+      padding: 2px;
+    }
+    .calenderList {
+      line-height: 1.5;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
